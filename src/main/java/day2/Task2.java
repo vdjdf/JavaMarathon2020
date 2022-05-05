@@ -8,17 +8,19 @@ public class Task2 {
 
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        for (int i = a + 1  ; i <= b + 1  ; i++) {
+        if (a >= b) {
+            System.out.print("Некорекнтый ввод");
+        } else {
+            for (int i = a + 1; i <= b - 1; i++) {
 
-            if (i % 5 == 0 || i % 10 == 1 ) {
-                System.out.println(i );
+                if (i % 5 == 0 && i % 10 != 0) {
+                    System.out.print(i + " ");
+                }
+
             }
-
-
-
-        }
         }
     }
+}
 
 
 /*2. Есть два числа, которые задаются пользователем через консоль (назовем эти два числа a и b).
